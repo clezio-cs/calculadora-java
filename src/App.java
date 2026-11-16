@@ -17,14 +17,14 @@ public class App {
         double divisao = 0;
         int restoDivisao = 0;
         
-        if (numero2 != 0){
+        if (numero1 >0 && numero2 >0){
             divisao = (double) numero1 / numero2;
             restoDivisao = numero1 % numero2;
             System.out.println("A divisão do numero 1 e número 2 é: " + divisao);
             System.out.println("O resto da divisão do número 1 e número 2 é: " + restoDivisao);
             
         } else {
-            System.out.println("Não é possivel dividir por zero.");
+            System.out.println("A divisão exige dois números positivos");
         }
         
         System.out.println("A soma do número 1 e número 2 é: " + soma);
