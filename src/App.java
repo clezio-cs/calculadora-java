@@ -13,19 +13,24 @@ public class App {
         int soma = numero1 + numero2;
         int subtracao = numero1 - numero2;
         int multiplicacao = numero1 * numero2;
-        //double divisao = (double) numero1 / numero2;
+       
+        double divisao = 0;
+        int restoDivisao = 0;
+        
         if (numero2 != 0){
-            double divisao = (double) numero1 / numero2;
+            divisao = (double) numero1 / numero2;
+            restoDivisao = numero1 % numero2;
+            System.out.println("A divisão do numero 1 e número 2 é: " + divisao);
+            System.out.println("O resto da divisão do número 1 e número 2 é: " + restoDivisao);
+            
         } else {
             System.out.println("Não é possivel dividir por zero.");
         }
-        int restoDivisao = numero1 % numero2;
-
+        
         System.out.println("A soma do número 1 e número 2 é: " + soma);
         System.out.println("A subtração do número 1 e número 2 é: " + subtracao);
         System.out.println("A multiplicação do número 1 e número 2 é: " + multiplicacao);
-        System.out.println("A divisao do número 1 e número 2 é: " + divisao );
-        System.out.println("O resto da divisão do número 1 e número 2 é: " + restoDivisao);
+       
 
         entrada.close();
       
