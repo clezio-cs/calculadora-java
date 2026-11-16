@@ -13,7 +13,12 @@ public class App {
         int soma = numero1 + numero2;
         int subtracao = numero1 - numero2;
         int multiplicacao = numero1 * numero2;
-        double divisao = (double) numero1 / numero2;
+        //double divisao = (double) numero1 / numero2;
+        if (numero2 != 0){
+            double divisao = (double) numero1 / numero2;
+        } else {
+            System.out.println("Não é possivel dividir por zero.");
+        }
         int restoDivisao = numero1 % numero2;
 
         System.out.println("A soma do número 1 e número 2 é: " + soma);
